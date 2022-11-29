@@ -15,12 +15,12 @@ public class Move : MonoBehaviour
 
     void MoveObject()
     {
-        transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0f, 0f);
+        transform.position = transform.position + new Vector3(speed * Time.deltaTime, speed * Time.deltaTime, 0f);
     }
 
     void RotateObject()
     {
-        transform.Rotate(new Vector3(0f, 0f, 0));
+        transform.Rotate(new Vector3(speed * Time.deltaTime, 0f,0f));
     }
 
 } 
